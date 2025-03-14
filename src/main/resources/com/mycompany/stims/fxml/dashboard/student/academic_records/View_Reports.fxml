@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane fx:id="dynamicContentContainer" styleClass="white-bg" stylesheets="@../../../../css/dashboardDesign.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.stims.controller.dashboard.student.academic_records.ViewReportsController">
+   <children>
+      <!-- VBox to hold the PDF pages -->
+      <VBox fx:id="pdfPagesContainer" alignment="CENTER" spacing="10" styleClass="white-bg" />
+
+      <!-- Back Button -->
+      <Button onAction="#handleBackButton" styleClass="clear-btn" text="Back" StackPane.alignment="TOP_LEFT">
+         <graphic>
+            <FontAwesomeIcon fill="WHITE" glyphName="CHEVRON_LEFT" />
+         </graphic></Button>
+   </children>
+</StackPane>

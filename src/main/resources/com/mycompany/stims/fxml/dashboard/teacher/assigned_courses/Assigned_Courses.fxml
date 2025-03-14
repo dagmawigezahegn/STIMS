@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="dynamicContentContainer" styleClass="white-bg" stylesheets="@../../../../css/dashboardDesign.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.stims.controller.dashboard.teacher.assigned_courses.AssignedCoursesController">
+   <children>
+      <VBox alignment="TOP_CENTER" spacing="20" styleClass="white-bg">
+         <padding>
+            <Insets bottom="20" left="20" right="20" top="20" />
+         </padding>
+         
+         <!-- Title -->
+         <Label alignment="CENTER" styleClass="form-title" text="Assigned Courses">
+            <font>
+               <Font name="Arial Black" size="24.0" />
+            </font>
+            <graphic>
+               <FontAwesomeIcon glyphName="BOOK" />
+            </graphic>
+            <VBox.margin>
+               <Insets left="10.0" right="10.0" />
+            </VBox.margin>
+         </Label>
+         
+         <!-- TableView for Assigned Courses -->
+         <VBox spacing="10">
+            <Label text="Assigned Courses ">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </Label>
+            <TableView fx:id="assignedCoursesTable" prefHeight="400.0" prefWidth="810.0">
+               <columns>
+                  <TableColumn fx:id="courseCodeColumn" prefWidth="120" text="Course Code" />
+                  <TableColumn fx:id="courseNameColumn" prefWidth="220" text="Course Name" />
+                  <TableColumn fx:id="creditHoursColumn" prefWidth="100" text="Credit Hours" />
+                  <TableColumn fx:id="academicYearColumn" prefWidth="120" text="Academic Year" />
+                  <TableColumn fx:id="semesterColumn" prefWidth="100" text="Semester" />
+                  <TableColumn fx:id="assignedDateColumn" prefWidth="150" text="Assigned Date" />
+               </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </TableView>
+         </VBox>
+      </VBox>
+   </children>
+</StackPane>

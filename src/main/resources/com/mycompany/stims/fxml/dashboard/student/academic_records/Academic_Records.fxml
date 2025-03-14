@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="dynamicContentContainer" styleClass="white-bg" stylesheets="@../../../../css/dashboardDesign.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.stims.controller.dashboard.student.academic_records.AcademicRecordsController">
+   <children>
+      <VBox alignment="TOP_CENTER" spacing="15.0" style="-fx-padding: 20;" styleClass="white-bg">
+         <children>
+            <!-- Title -->
+            <Label styleClass="form-title" text="My Academic Records">
+               <font>
+                  <Font name="Arial Black" size="24.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon glyphName="UNIVERSITY" />
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </Label>
+
+            <!-- TableView for Academic Records -->
+            <TableView fx:id="academicRecordsTable" prefHeight="400.0" prefWidth="810.0" VBox.vgrow="ALWAYS">
+               <columns>
+                  <TableColumn fx:id="academicYearColumn" prefWidth="150" text="Academic Year" />
+                  <TableColumn fx:id="yearColumn" prefWidth="120" text="Year" />
+                  <TableColumn fx:id="semesterColumn" prefWidth="120" text="Semester" />
+                  <TableColumn fx:id="totalCreditsColumn" prefWidth="150" text="Total Credits" />
+                  <TableColumn fx:id="sgpaColumn" prefWidth="120" text="SGPA" />
+               </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </TableView>
+
+            <!-- CGPA Display -->
+            <HBox alignment="CENTER_LEFT" spacing="10" styleClass="cgpa-label">
+               <children>
+                  <Label styleClass="cgpa-label-text" text="Cumulative GPA (CGPA):" />
+                  <Label fx:id="cgpaLabel" styleClass="text-label-number">
+                     <font>
+                        <Font name="Times New Roman Bold" size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </HBox>
+
+            <!-- View Report Button -->
+            <HBox alignment="CENTER">
+               <children>
+                  <Button fx:id="viewReportButton" alignment="CENTER" onAction="#viewReport" styleClass="add-btn" text="View Report">
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="FILE" />
+                     </graphic></Button>
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</StackPane>

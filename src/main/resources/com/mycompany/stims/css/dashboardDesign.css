@@ -1,0 +1,355 @@
+/* ==================== Login Form ==================== */
+.login-textfield {
+    -fx-background-color: #f2f2f2;
+    -fx-background-radius: 4px;
+    -fx-border-color: #A7A7A7;
+    -fx-border-width: 0.5px;
+    -fx-border-radius: 4px;
+    -fx-font-size: 14px;
+    -fx-font-family: "Kumbh Sans";
+    -fx-padding: 6px;
+}
+
+.login-textfield:focused {
+    -fx-background-color: #ffffff;
+    -fx-border-color: linear-gradient(to bottom right, #395FAC, #2D88D4);
+    -fx-border-width: 1px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 102, 204, 0.5), 4, 0.0, 0, 2);
+}
+
+.login-btn {
+    -fx-background-color: #2D88D4;
+    -fx-background-radius: 4px;
+    -fx-border-color: #A7A7A7;
+    -fx-border-width: 0.5px;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 14px;
+    -fx-font-family: "Kumbh Sans";
+    -fx-padding: 8px 15px;
+    -fx-cursor: hand;
+}
+
+.login-btn:hover {
+    -fx-background-color: #395FAC;
+    -fx-effect: dropshadow(gaussian, rgba(0, 102, 204, 0.8), 6, 0.0, 0, 3);
+}
+
+.left-form {
+    -fx-background-color: linear-gradient(to bottom right, #3aa0e8, #034e86);
+    -fx-border-color: #000;
+    -fx-border-width: .4px 0px .4px .4px;
+}
+
+
+/* ==================== Navigation Form ==================== */
+.nav-form {
+    -fx-background-color: linear-gradient(to bottom right, #3aa0e8, #034e86);
+}
+
+.nav-btn {
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+    -fx-text-fill: #fff;
+    -fx-font-size: 15px;
+    -fx-font-family: "Arial";
+    -fx-alignment: CENTER-LEFT;
+}
+
+.nav-btn:hover {
+    -fx-background-color: #2268ae;
+}
+
+
+/* ==================== Logout Button ==================== */
+.logout {
+    -fx-background-color: #ff3204;
+    -fx-text-fill: #ffffff;
+    -fx-background-radius: 10px;
+    -fx-font-size: 15px;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-cursor: hand;
+}
+
+.logout:hover {
+    -fx-background-color: #2268ae;
+}
+
+/* ==================== Shadows and Backgrounds ==================== */
+.shadow {
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 6, 0, 0, 0);
+}
+
+.white-bg {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 8px;
+}
+
+
+/* ==================== Table View ==================== */
+.table-view {
+    -fx-background-color: transparent;
+    -fx-padding: 0px;
+    -fx-border-color: linear-gradient(to bottom right, #59b0ee, #1e6de3);
+    -fx-border-width: 2px;
+    -fx-border-radius: 8px;
+}
+
+.table-view .table-column {
+    -fx-alignment: CENTER;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: linear-gradient(to bottom right, #0095ff, #5db2f3);
+    -fx-background-radius: 8px 8px 0px 0px;
+    -fx-background-inset: 0 0 0 0;
+}
+
+.table-view .column-header,
+.filter {
+    -fx-background-color: transparent;
+    -fx-size: 20px;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #fff;
+    -fx-font-family: "Arial";
+    -fx-font-size: 13px;
+}
+
+
+/* ==================== Text Fields ==================== */
+.textfield {
+    -fx-background-color: linear-gradient(to bottom, #efefef, #eee);
+    -fx-background-radius: 4px;
+    -fx-border-color: linear-gradient(to bottom right, #0e63a0, #00aaff);
+    -fx-border-width: .8px;
+    -fx-font-family: "Tahoma";
+    -fx-border-radius: 4px;
+}
+
+.textfield:focused {
+    -fx-background-color: #fff;
+    -fx-border-width: 1px;
+}
+
+
+/* ==================== Buttons ==================== */
+.update-btn,
+.delete-btn,
+.clear-btn,
+.apply-filter-btn,
+.clear-filter-btn,
+.load-record-btn {
+    -fx-background-radius: 9px;
+    -fx-cursor: hand;
+    -fx-text-fill: #fff;
+    -fx-font-size: 14px;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-padding: 8px 14px;
+    -fx-border-width: 1px;
+}
+
+.add-btn {
+    -fx-background-color: #2d5278;
+    -fx-font-size: 15px;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-padding: 8px 14px;
+    -fx-border-width: 1px;
+    -fx-background-radius: 10px;
+    -fx-cursor: hand;
+    -fx-text-fill: #fff;
+}
+
+.add-btn:hover {
+    -fx-background-color: #2268ae;
+}
+
+.update-btn {
+    -fx-background-color: #2d7755;
+}
+
+.update-btn:hover {
+    -fx-background-color: #22ad72;
+}
+
+.delete-btn {
+    -fx-background-color: #90242f;
+}
+
+.delete-btn:hover {
+    -fx-background-color: #c51f32;
+}
+
+.clear-btn {
+    -fx-background-color: #1e2b79;
+}
+
+.clear-btn:hover {
+    -fx-background-color: #0b67ae;
+}
+
+.apply-filter-btn {
+    -fx-background-color: #2d5278;
+}
+
+.apply-filter-btn:hover {
+    -fx-background-color: #2268ae;
+}
+
+.clear-filter-btn {
+    -fx-background-color: #90242f;
+}
+
+.clear-filter-btn:hover {
+    -fx-background-color: #c51f32;
+}
+
+.load-record-btn {
+    -fx-background-color: #1e2b79;
+}
+
+.load-record-btn:hover {
+    -fx-background-color: #0b67ae;
+}
+
+
+/* ==================== Combo Box ==================== */
+.combo-box {
+    -fx-background-color: linear-gradient(to bottom right, #efefef, #eee);
+    -fx-border-color: linear-gradient(to bottom right, #0e63a0, #00aaff);
+    -fx-border-radius: 3px;
+    -fx-border-width: 0.8px;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 12px;
+    -fx-padding: 3px 6px;
+    -fx-background-radius: 3px;
+}
+
+.combo-box:focused {
+    -fx-background-color: #fff;
+    -fx-border-width: 1.5px;
+}
+
+
+/* ==================== Text Labels ==================== */
+.label {
+    -fx-font-size: 17px;
+    -fx-font-family: "Helvetica", sans-serif;
+    -fx-text-fill: #080808;
+    -fx-font-weight: normal;
+    -fx-effect: none;
+}
+
+.Mainlabel {
+    -fx-font-size: 26px;
+    -fx-text-fill: #f4f8ff;
+    -fx-font-family: "Times New Roman";
+    -fx-font-weight: bold;
+    -fx-padding: 6px 0;
+}
+
+.form-title {
+    -fx-font-size: 24px;
+    -fx-text-fill: #000000;
+    -fx-font-family: "Arial Black";
+    -fx-font-weight: bold;
+    -fx-padding: 6px 0;
+}
+
+.text-label-second {
+    -fx-font-size: 15px;
+    -fx-text-fill: #ffffff;
+    -fx-font-family: "Tahoma";
+    -fx-padding: 6px 0;
+}
+
+.text-label-third {
+    -fx-font-size: 20px;
+    -fx-text-fill: #ffffff;
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-padding: 6px 0;
+}
+
+.text-label-number {
+    -fx-font-size: 25px;
+    -fx-font-family: "Berlin Sans FB";
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: normal;
+    -fx-effect: none;
+}
+
+.home-text-label {
+    -fx-font-family: "Montserrat Bold";
+    -fx-font-size: 28px;
+    -fx-font-weight: 800;
+    -fx-text-fill: #28527c;
+    -fx-padding: 10px 0;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 2, 2, 0, 1);
+    -fx-alignment: CENTER;
+}
+
+.home-text-label-second {
+    -fx-font-family: "Quicksand";
+    -fx-font-size: 24px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #265b90;
+    -fx-padding: 5px 0;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.05), 1, 1, 0, 1);
+    -fx-alignment: CENTER;
+}
+
+
+/* ==================== Notification Button Styles ==================== */
+.notification-btn {
+    -fx-background-color: linear-gradient(to right, #344250, #3c6382);
+    -fx-background-radius: 10px;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 15px;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-cursor: hand;
+}
+
+.notification-btn:hover {
+    -fx-background-color: #2268ae;
+}
+
+.notification-btn:focused {
+    -fx-background-color: #2268ae;
+}
+
+
+/* ==================== Form Styles ==================== */
+.form-section {
+    -fx-padding: 10;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 5px;
+    -fx-background-color: #f9f9f9;
+}
+
+
+/* ==================== Card Styles ==================== */
+.card {
+    -fx-background-color: linear-gradient(to right, #344250, #3c6382);
+    -fx-background-radius: 4px;
+}
+
+.card:hover {
+    -fx-background-color: #2268ae;
+}
+
+.cgpa-label {
+    -fx-background-color: linear-gradient(to left, #479df4, #154267);
+    -fx-background-radius: 4px;
+}
+
+.cgpa-label:hover {
+    -fx-background-color: #2268ae;
+}
+
+.cgpa-label-text {
+    -fx-font-size: 18px;
+    -fx-text-fill: #ffffff;
+    -fx-font-family: "Times New Roman";
+    -fx-effect: none;
+}

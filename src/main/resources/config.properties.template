@@ -1,0 +1,20 @@
+# config.properties.template
+
+# Report directories
+report.directory=${REPORT_DIRECTORY}
+report.course_report_directory=${report.directory}Course Report/
+report.all_courses_directory=${report.course_report_directory}All Courses Report/
+report.course_statistics_directory=${report.course_report_directory}Course Statistics/
+report.report_card_directory=${report.directory}Report Card/
+report.student_report_directory=${report.directory}Student Report/Students/
+report.all_students_report_directory=${report.directory}Student Report/
+report.transcript_directory=${report.directory}Transcripts/
+
+# Template paths
+template.report_card=${TEMPLATE_DIRECTORY}/report_card_template.xlsx
+template.transcript=${TEMPLATE_DIRECTORY}/transcript_template.xlsx
+
+# Database configuration
+db.url=${DB_URL}
+db.username=${DB_USERNAME}
+db.password=${DB_PASSWORD}

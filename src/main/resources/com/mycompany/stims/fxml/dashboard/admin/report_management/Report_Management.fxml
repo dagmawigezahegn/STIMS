@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="dynamicContentContainer" styleClass="white-bg" stylesheets="@../../../../css/dashboardDesign.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.stims.controller.dashboard.admin.report_management.Report_ManagementController">
+   <children>
+      <AnchorPane fx:id="contentArea" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="white-bg" stylesheets="@../../../../css/dashboardDesign.css">
+         <children>
+            <!-- Left Side: Buttons -->
+            <VBox alignment="CENTER" spacing="20" styleClass="white-bg" AnchorPane.bottomAnchor="20" AnchorPane.leftAnchor="20" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="80.0">
+               <padding>
+                  <Insets bottom="20" left="20" right="20" top="20" />
+               </padding>
+               
+               <!-- Button: Student Report -->
+               <Button fx:id="studentReportButton" mnemonicParsing="false" onAction="#showStudentReport" styleClass="add-btn" text="Student Report">
+                  <font>
+                     <Font name="Arial" size="14.0" />
+                  </font>
+               </Button>
+               
+               <!-- Button: Course Report -->
+               <Button fx:id="courseReportButton" mnemonicParsing="false" onAction="#showCourseReport" styleClass="add-btn" text="Course Report">
+                  <font>
+                     <Font name="Arial" size="14.0" />
+                  </font>
+               </Button>
+               
+               <!-- Button: Semester Report Card -->
+               <Button fx:id="SemesterReportCardButton" mnemonicParsing="false" onAction="#showSemesterReportCard" styleClass="add-btn" text="Semester Report Card">
+                  <font>
+                     <Font name="Arial" size="14.0" />
+                  </font>
+               </Button>
+               
+               <!-- Button: Academic Transcript -->
+               <Button fx:id="AcademicTranscriptButton" mnemonicParsing="false" onAction="#showAcademicTranscript" styleClass="add-btn" text="Academic Transcript">
+                  <font>
+                     <Font name="Arial" size="14.0" />
+                  </font>
+               </Button>
+            </VBox>
+            
+            <!-- Right Side: Cards -->
+            <VBox alignment="TOP_RIGHT" spacing="20" styleClass="white-bg" AnchorPane.bottomAnchor="20" AnchorPane.rightAnchor="20" AnchorPane.topAnchor="20">
+               <padding>
+                  <Insets bottom="20" left="20" right="20" top="20" />
+               </padding>
+               
+               <!-- Card: Total Enrolled Students -->
+               <AnchorPane styleClass="card">
+                  <children>
+                     <FontAwesomeIcon fill="WHITE" glyphName="USERS" layoutX="14.0" layoutY="77.0" size="4em" />
+                     <Label layoutX="56.0" layoutY="80.0" prefHeight="19.0" prefWidth="156.0" styleClass="text-label-second" text="Total Enrolled Students" textFill="WHITE">
+                        <font>
+                           <Font name="Tahoma" size="15.0" />
+                        </font>
+                     </Label>
+                     <Label fx:id="totalStudents" alignment="CENTER_RIGHT" layoutX="65.0" layoutY="21.0" prefHeight="29.0" prefWidth="156.0" styleClass="text-label-number" text="0" textFill="WHITE">
+                        <font>
+                           <Font name="Berlin Sans FB" size="25.0" />
+                        </font>
+                     </Label>
+                  </children>
+               </AnchorPane>
+               
+               <!-- Card: Total Teachers -->
+               <AnchorPane styleClass="card">
+                  <children>
+                     <FontAwesomeIcon fill="WHITE" layoutX="14.0" layoutY="79.0" size="4em" text="" />
+                     <Label layoutX="52.0" layoutY="76.0" prefHeight="19.0" prefWidth="175.0" styleClass="text-label-second" text="Total Teachers" textFill="WHITE">
+                        <font>
+                           <Font name="Tahoma" size="15.0" />
+                        </font>
+                     </Label>
+                     <Label fx:id="totalTeachers" alignment="CENTER_RIGHT" layoutX="87.0" layoutY="14.0" prefHeight="29.0" prefWidth="130.0" styleClass="text-label-number" text="0" textFill="WHITE">
+                        <font>
+                           <Font name="Berlin Sans FB" size="25.0" />
+                        </font>
+                     </Label>
+                  </children>
+               </AnchorPane>
+               
+               <!-- Card: Total Available Courses -->
+               <AnchorPane styleClass="card">
+                  <children>
+                     <FontAwesomeIcon fill="WHITE" glyphName="BOOK" layoutX="14.0" layoutY="68.0" size="4em" />
+                     <Label layoutX="50.0" layoutY="75.0" prefHeight="19.0" prefWidth="175.0" styleClass="text-label-second" text="Total Available Courses" textFill="WHITE" />
+                     <Label fx:id="totalCourses" alignment="CENTER_RIGHT" layoutX="59.0" layoutY="12.0" prefHeight="29.0" prefWidth="156.0" styleClass="text-label-number" text="0" textFill="WHITE">
+                        <font>
+                           <Font name="Berlin Sans FB" size="25.0" />
+                        </font>
+                     </Label>
+                  </children>
+               </AnchorPane>
+            </VBox>
+            <Label layoutX="15.0" layoutY="15.0" styleClass="form-title" text="Report Management">
+               <graphic>
+                  <FontAwesomeIcon glyphName="TASKS" />
+               </graphic>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

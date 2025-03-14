@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="dynamicContentContainer" stylesheets="@../../../../css/dashboardDesign.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox fx:id="homeScreen" alignment="TOP_RIGHT" spacing="15.0" styleClass="white-bg">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" />
+         </padding>
+         <children>
+            <HBox alignment="TOP_RIGHT">
+               <children>
+                  <ImageView fitHeight="400.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../img/logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label styleClass="home-text-label" text="Welcome to STIMS" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label fx:id="greetingLabel" styleClass="home-text-label-second" text="Hello, Teacher !" />
+               </children>
+            </HBox>
+            <Separator />
+            <VBox alignment="CENTER_LEFT" spacing="10" styleClass="cgpa-label">
+               <children>
+                  <Label styleClass="text-label-third" text="Upcoming Events">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label styleClass="text-label-second" text="No upcoming events." />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER_LEFT" spacing="10" styleClass="cgpa-label">
+               <children>
+                  <Label styleClass="text-label-third" text="Announcements">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label styleClass="text-label-second" text="No new announcements." />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</StackPane>
