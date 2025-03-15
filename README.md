@@ -175,7 +175,7 @@ STIMS/
 │   │   │               +---report/                   # Report generation classes
 │   │   │               +---utils/                    # Utility classes (e.g., Config, PasswordUtils)
 │   │   +---resources/
-│   │       ¦   config.properties.template            # Template configuration file for database connection and file path        
+│   │       ¦   config.properties                     # Configuration file for database connection and file path        
 │   │       +---com/
 │   │           +---mycompany/
 │   │               +---stims/
