@@ -1,49 +1,55 @@
-# USER_GUIDE
+---
 
-## Introduction
+# User Guide
+
+## 📖 Introduction
+
 This guide provides a step-by-step walkthrough of the **Student Information Management System (STIMS)**. It covers the functionalities available to each user role: **Super Admin**, **Admin**, **Teacher**, and **Student**. Follow this guide to understand how to navigate the system, perform tasks, and manage academic data efficiently.
 
-## Table of Contents
-        1. **Getting Started**
-        - Prerequisites
-        - Database Setup
-        - Creating the Super Admin
-        - Running the Application
+---
 
-        2. **Super Admin Guide**
-        - Logging In
-        - Admin Management
-        - Profile & Settings
-        - Logging Out
+## 📑 Table of Contents
 
-        3. **Admin Guide**
-        - Logging In
-        - Student Management
-        - Teacher Management
-        - Course Management
-        - Report Management
-        - Profile & Settings
-        - Logging Out
+1. **Getting Started**
+   - Prerequisites
+   - Database Setup
+   - Creating the Super Admin
+   - Running the Application
 
-        4. **Teacher Guide**
-        - Logging In
-        - Assigned Courses
-        - Enrolled Students
-        - Manage Grades
-        - Profile & Settings
-        - Logging Out
+2. **Super Admin Guide**
+   - Logging In
+   - Admin Management
+   - Profile & Settings
+   - Logging Out
 
-        5. **Student Guide**
-        - Logging In
-        - My Courses
-        - Grades
-        - Academic Records
-        - Profile & Settings
-        - Logging Out
+3. **Admin Guide**
+   - Logging In
+   - Student Management
+   - Teacher Management
+   - Course Management
+   - Report Management
+   - Profile & Settings
+   - Logging Out
 
-        ---
+4. **Teacher Guide**
+   - Logging In
+   - Assigned Courses
+   - Enrolled Students
+   - Manage Grades
+   - Profile & Settings
+   - Logging Out
 
-## 1. Getting Started
+5. **Student Guide**
+   - Logging In
+   - My Courses
+   - Grades
+   - Academic Records
+   - Profile & Settings
+   - Logging Out
+
+---
+
+## 1. 🚀 Getting Started
 
 ### Prerequisites
 Ensure you have the following installed:
@@ -55,13 +61,13 @@ Ensure you have the following installed:
 
 ### Database Setup
 1. Open MySQL and create the database:
-
+   ```sql
    CREATE DATABASE STIMS_DBA;
-   
+   ```
 2. Import the SQL schema (if available):
-   
+   ```bash
    mysql -u root -p STIMS_DBA < database/schema.sql
-   
+   ```
 3. Update the database connection settings in `src/main/resources/config.properties`.
 
 ### Creating the Super Admin
@@ -69,7 +75,6 @@ To create the first Super Admin, follow these steps:
 
 1. Open the `STIMS.java` file located in the `src/main/java/com/mycompany/stims/` directory.
 2. Modify the `main` method to create a new Super Admin. Here is an example:
-
    ```java
    package com.mycompany.stims;
    import com.mycompany.stims.database.DatabaseConnection;
@@ -115,31 +120,28 @@ To create the first Super Admin, follow these steps:
            }
        }
    }
-
    ```
-
 3. Run the `STIMS.java` file. If the database connection is successful, you will see a log message like the following:
-
+   ```
    Database connection established successfully.
    Database connection established.
    Admin added successfully with AdminIdNo: ID/ADM/001
    Temporary Password: bDniDUV0DC$h
-   -----------------------------------------------------------------------
-   
-
+   ----------------------------------------------------------------------
+   ```
 4. The Super Admin account is now created. The temporary password is saved in `temporary_password_admin.txt`.
 
 ### Running the Application
 1. Clone the repository:
-   
+   ```bash
    git clone https://github.com/dagmawigezahegn/STIMS.git
-   
+   ```
 2. Open the project in your preferred IDE (NetBeans/IntelliJ).
 3. Build and run the application.
 
+---
 
-
-## 2. Super Admin Guide
+## 2. 👑 Super Admin Guide
 
 ### Logging In
 1. Launch the STIMS application.
@@ -169,9 +171,9 @@ To create the first Super Admin, follow these steps:
 ### Logging Out
 1. Click the **Logout** button to exit the system and return to the login screen.
 
+---
 
-
-## 3. Admin Guide
+## 3. 👨‍💼 Admin Guide
 
 ### Logging In
 1. Launch the STIMS application.
@@ -194,7 +196,7 @@ To create the first Super Admin, follow these steps:
    - Navigate to **Student Management > Student Academic Records**.
    - Enter the `studentId_No` and academic details (e.g., academic year, year, semester).
    - Click **Add Record** to calculate SGPA and CGPA.
-   - Select the record from the table and Click **Update Academic Records** for recalulating and updating records.
+   - Select the record from the table and Click **Update Academic Records** for recalculating and updating records.
 
 4. **View Student Profiles**:
    - Navigate to **Student Management > View Student Profiles**.
@@ -242,11 +244,11 @@ To create the first Super Admin, follow these steps:
 
 2. **Course Report**:
    - Navigate to **Report Management > Course Report**.
-   - Generate a PDF report for a specific course ,all courses and course statistics.
+   - Generate a PDF report for a specific course, all courses, and course statistics.
 
 3. **Semester Report Card**:
    - Navigate to **Report Management > Semester Report Card**.
-   - Generate an Excel report card for a student for a specific semester by entering the academic year,year and semester.
+   - Generate an Excel report card for a student for a specific semester by entering the academic year, year, and semester.
 
 4. **Academic Transcript**:
    - Navigate to **Report Management > Academic Transcript**.
@@ -263,9 +265,9 @@ To create the first Super Admin, follow these steps:
 ### Logging Out
 1. Click the **Logout** button to exit the system and return to the login screen.
 
+---
 
-
-## 4. Teacher Guide
+## 4. 👩‍🏫 Teacher Guide
 
 ### Logging In
 1. Launch the STIMS application.
@@ -296,9 +298,9 @@ To create the first Super Admin, follow these steps:
 ### Logging Out
 1. Click the **Logout** button to exit the system and return to the login screen.
 
+---
 
-
-## 5. Student Guide
+## 5. 🎓 Student Guide
 
 ### Logging In
 1. Launch the STIMS application.
@@ -329,9 +331,10 @@ To create the first Super Admin, follow these steps:
 ### Logging Out
 1. Click the **Logout** button to exit the system and return to the login screen.
 
+---
 
+## 🎯 Conclusion
 
-## Conclusion
 This guide provides a comprehensive overview of how to use the STIMS application for each user role. For further assistance, refer to the **SYSTEM_OVERVIEW.md** and **README.md** files or contact the system administrator.
 
-
+---
