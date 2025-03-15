@@ -1,10 +1,4 @@
-Here’s the redesigned Markdown documentation with improved structure, layout, and design. The content remains unchanged, but the presentation is more polished and visually appealing.
-
----
-
 # STIMS - Student Information Management System
-
-![STIMS Banner](https://via.placeholder.com/1200x400) <!-- Add a banner image if available -->
 
 ---
 
@@ -261,7 +255,7 @@ This project is licensed under the **MIT License**.
 ---
 
 ## 📧 Contact
-For any inquiries, reach out to **dagimg8@gmail.com**.
+For any inquiries, reach out to **dagmawigezahegn.engida@gmail.com**.
 
 ---
 
