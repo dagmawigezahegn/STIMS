@@ -1,10 +1,12 @@
+---
+
 # Database Schema Documentation
 
 This document provides an overview of the database schema for the **STIMS (Student Information Management System)** project. The database is designed to manage student, teacher, course, and administrative data efficiently.
 
 ---
 
-## Database: `stims_dba`
+## 🗃️ Database: `stims_dba`
 
 The database `stims_dba` contains the following tables:
 
@@ -24,9 +26,9 @@ The database `stims_dba` contains the following tables:
 
 ---
 
-## Table Details
+## 📊 Table Details
 
-### 1. `admin`
+### 1. **`admin`**
 Stores information about system administrators.
 
 | Column Name       | Data Type        | Constraints                          | Description                          |
@@ -50,7 +52,7 @@ Stores information about system administrators.
 
 ---
 
-### 2. `course`
+### 2. **`course`**
 Stores information about courses offered by the institution.
 
 | Column Name          | Data Type        | Constraints                          | Description                          |
@@ -69,7 +71,7 @@ Stores information about courses offered by the institution.
 
 ---
 
-### 3. `courseoffering`
+### 3. **`courseoffering`**
 Stores information about course offerings for specific academic years.
 
 | Column Name       | Data Type        | Constraints                          | Description                          |
@@ -84,7 +86,7 @@ Stores information about course offerings for specific academic years.
 
 ---
 
-### 4. `department`
+### 4. **`department`**
 Stores information about academic departments.
 
 | Column Name       | Data Type        | Constraints                          | Description                          |
@@ -95,7 +97,7 @@ Stores information about academic departments.
 
 ---
 
-### 5. `grade`
+### 5. **`grade`**
 Stores student grades for specific courses.
 
 | Column Name          | Data Type        | Constraints                          | Description                          |
@@ -108,7 +110,7 @@ Stores student grades for specific courses.
 
 ---
 
-### 6. `program`
+### 6. **`program`**
 Stores information about academic programs.
 
 | Column Name       | Data Type        | Constraints                          | Description                          |
@@ -119,7 +121,7 @@ Stores information about academic programs.
 
 ---
 
-### 7. `role`
+### 7. **`role`**
 Stores user roles (e.g., admin, teacher, student).
 
 | Column Name       | Data Type        | Constraints                          | Description                          |
@@ -130,7 +132,7 @@ Stores user roles (e.g., admin, teacher, student).
 
 ---
 
-### 8. `student`
+### 8. **`student`**
 Stores information about students.
 
 | Column Name          | Data Type        | Constraints                          | Description                          |
@@ -156,7 +158,7 @@ Stores information about students.
 
 ---
 
-### 9. `student_reports`
+### 9. **`student_reports`**
 Stores student-generated reports.
 
 | Column Name          | Data Type        | Constraints                          | Description                          |
@@ -170,7 +172,7 @@ Stores student-generated reports.
 
 ---
 
-### 10. `studentacademicrecord`
+### 10. **`studentacademicrecord`**
 Stores academic records for students.
 
 | Column Name          | Data Type        | Constraints                          | Description                          |
@@ -186,7 +188,7 @@ Stores academic records for students.
 
 ---
 
-### 11. `studentcourse`
+### 11. **`studentcourse`**
 Stores student enrollment in courses.
 
 | Column Name          | Data Type        | Constraints                          | Description                          |
@@ -200,7 +202,7 @@ Stores student enrollment in courses.
 
 ---
 
-### 12. `teacher`
+### 12. **`teacher`**
 Stores information about teachers.
 
 | Column Name          | Data Type        | Constraints                          | Description                          |
@@ -223,7 +225,7 @@ Stores information about teachers.
 
 ---
 
-### 13. `teachercourse`
+### 13. **`teachercourse`**
 Stores teacher assignments to courses.
 
 | Column Name          | Data Type        | Constraints                          | Description                          |
@@ -237,7 +239,7 @@ Stores teacher assignments to courses.
 
 ---
 
-## Relationships
+## 🔗 Relationships
 
 1. **`admin`** ↔ **`role`**:
    - `admin.role_id` references `role.role_id`.
@@ -274,7 +276,7 @@ Stores teacher assignments to courses.
 
 ---
 
-## Notes
+## 📝 Notes
 
 - All tables include `created_at` and `updated_at` timestamps for tracking record creation and updates.
 - Foreign key constraints ensure data integrity across related tables.
@@ -322,3 +324,5 @@ Stores teacher assignments to courses.
 ---
 
 This document provides a comprehensive overview of the database schema for the STIMS project. For further details, refer to the `schema.sql` file in the `database` directory.
+
+--- 
