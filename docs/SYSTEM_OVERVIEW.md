@@ -1,11 +1,15 @@
-# SYSTEM_OVERVIEW
+---
 
-## Introduction
-The **Student Information Management System (STIMS)** is a comprehensive platform designed to manage student, teacher, and course-related data efficiently. It provides a modular and scalable architecture, ensuring clear separation of concerns and ease of maintenance. The system is built using **JavaFX** for the user interface and **MySQL** for database management. STIMS is tailored for educational institutions to streamline administrative tasks, academic record management, and reporting.
+# System Overview
+
+## 🌟 Introduction
+
+The **Student Information Management System (STIMS)** is a comprehensive platform designed to manage student, teacher, and course-related data efficiently. It provides a **modular and scalable architecture**, ensuring clear separation of concerns and ease of maintenance. The system is built using **JavaFX** for the user interface and **MySQL** for database management. STIMS is tailored for educational institutions to streamline administrative tasks, academic record management, and reporting.
 
 ---
 
-## Key Features
+## ✨ Key Features
+
 STIMS offers the following key features:
 
 1. **User Management**:
@@ -33,7 +37,7 @@ STIMS offers the following key features:
 
 ---
 
-## How Students, Courses, and Records are Managed
+## 🎓 How Students, Courses, and Records are Managed
 
 ### 1. **Student Management**
 Students are at the core of the STIMS system. The system allows for efficient management of student data, including registration, academic records, and course enrollments.
@@ -127,7 +131,7 @@ Teachers play a vital role in the academic system, and STIMS provides tools to m
 
 ---
 
-## User Roles and Functionalities
+## 👤 User Roles and Functionalities
 
 ### 1. **Super Admin**
 The Super Admin has the highest level of access and can perform the following tasks:
@@ -186,7 +190,7 @@ Students have access to view their academic information. Their tasks include:
 
 ---
 
-## System Architecture
+## 🏗️ System Architecture
 The system follows a **Model-View-Controller (MVC)** architecture, ensuring a clear separation between the user interface, business logic, and data access layers.
 
 ### Key Components:
@@ -210,7 +214,7 @@ The system follows a **Model-View-Controller (MVC)** architecture, ensuring a cl
 
 ---
 
-## Database Schema
+## 🗃️ Database Schema
 The system uses a MySQL database with the following key tables:
 
 1. **`admin`**: Stores admin user details.
@@ -250,8 +254,9 @@ The `schema.sql` file comes with default values for certain tables to ensure the
      - **Information Technology Systems** 
    - Unlike roles and programs, departments can be added directly through the database. This flexibility allows institutions to customize the system according to their organizational structure.
 
+---
 
-## Workflow and Processes
+## 🔄 Workflow and Processes
 
 1. **User Authentication**:
    - Users log in using their username/email and password.
@@ -271,7 +276,7 @@ The `schema.sql` file comes with default values for certain tables to ensure the
 
 ---
 
-## Security and Data Privacy
+## 🔒 Security and Data Privacy
 1. **Password Hashing**:
    - Passwords are hashed using secure algorithms (e.g., bcrypt).
    - Temporary passwords are securely generated and hashed before storage.
@@ -284,7 +289,7 @@ The `schema.sql` file comes with default values for certain tables to ensure the
 
 ---
 
-## Deployment and Maintenance
+## 🚀 Deployment and Maintenance
 1. **Deployment**:
    - The system can be deployed on a local server or cloud-based environment.
    - MySQL database is required for data storage.
@@ -295,5 +300,7 @@ The `schema.sql` file comes with default values for certain tables to ensure the
 
 ---
 
-## Conclusion
-STIMS is a robust and scalable system designed to streamline the management of student, teacher, and course-related data. Its modular architecture, secure authentication, and comprehensive reporting features make it ideal for educational institutions. Default values for roles (Super Admin, Admin) and programs (Undergraduate, Graduate) ensure smooth setup but cannot be modified, as the core logic depends on them. However, departments can be added or customized, providing flexibility while maintaining system stability.
+## 🎯 Conclusion
+STIMS is a **robust and scalable system** designed to streamline the management of student, teacher, and course-related data. Its **modular architecture**, **secure authentication**, and **comprehensive reporting features** make it ideal for educational institutions. Default values for roles (Super Admin, Admin) and programs (Undergraduate, Graduate) ensure smooth setup but cannot be modified, as the core logic depends on them. However, departments can be added or customized, providing flexibility while maintaining system stability.
+
+---
