@@ -4,7 +4,7 @@
 
 ## 📖 Introduction
 
-This guide provides a step-by-step walkthrough of the **Student Information Management System (STIMS)**. It covers the functionalities available to each user role: **Super Admin**, **Admin**, **Teacher**, and **Student**. Follow this guide to understand how to navigate the system, perform tasks, and manage academic data efficiently.
+This guide provides a step-by-step walkthrough of the **Student Information Management System (STIMS)**. It covers the functionalities available to each user role **Super Admin**, **Admin**, **Teacher**, and **Student**. Follow this guide to understand how to navigate the system, perform tasks, and manage academic data efficiently.
 
 ---
 
