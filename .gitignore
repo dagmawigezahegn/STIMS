@@ -21,3 +21,6 @@ Thumbs.db
 
 # Ignore generated_reports folder
 /generated_reports/
+
+# Ignore generated temporary passwords txt 
+src/*.txt
