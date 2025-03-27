@@ -249,11 +249,6 @@ The project includes the following documentation files:
 
 ---
 
-## 📜 License
-This project is licensed under the **MIT License**.
-
----
-
 ## 📧 Contact
 For any inquiries, reach out to **dagmawigezahegn.engida@gmail.com**.
 
