@@ -250,7 +250,7 @@ The project includes the following documentation files:
 ---
 
 ## 📧 Contact
-For any inquiries, reach out to **dagmawigezahegn.engida@gmail.com**.
+For any inquiries, reach out to **dagmawi.g.engida@gmail.com**.
 
 ---
 
